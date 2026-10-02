@@ -3,67 +3,115 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV-er - Gruppe 6</title>
+    <title>CV-er | Alfa Omega</title>
+    <meta name="description" content="Last ned CV-ene til medlemmene i Alfa Omega." />
+    <meta property="og:title" content="CV-er | Alfa Omega" />
+    <meta property="og:description" content="Last ned CV-ene til medlemmene i Alfa Omega." />
+    <meta property="og:image" content="https://thelyng.dev/images/opt/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#15263F" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css?v=3" />
 </head>
 <body>
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
     <header class="site-header">
         <div class="header-content">
-            <nav class="site-nav site-nav-left">
+            <nav class="site-nav site-nav-left" aria-label="Hovedmeny">
                 <a href="medlemmer.html">Medlemmer</a>
-                <a href="cver.html">CV-er</a>
+                <a href="cver.html" aria-current="page">CV-er</a>
                 <a href="promovideo.html">Promovideo</a>
             </nav>
-
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Gruppe 6 logo" />
+            <a class="site-logo" href="index.html" aria-label="Alfa Omega, til forsiden">
+                <img src="images/opt/logo.png" alt="Alfa Omega" width="337" height="400" />
             </a>
-
-            <nav class="site-nav site-nav-right">
+            <nav class="site-nav site-nav-right" aria-label="Hovedmeny, fortsettelse">
                 <a href="prosjekter.html">Prosjekter</a>
                 <a href="bacheloroppgave.html">Bacheloroppgave</a>
                 <a href="kontakt.html">Kontakt oss</a>
             </nav>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hovedmeny">
+                <span class="nav-toggle-bar"></span><span class="visually-hidden">Meny</span>
+            </button>
         </div>
+        <nav class="mobile-nav" id="hovedmeny" aria-label="Meny">
+            <a href="medlemmer.html">Medlemmer</a>
+            <a href="cver.html" aria-current="page">CV-er</a>
+            <a href="promovideo.html">Promovideo</a>
+            <a href="prosjekter.html">Prosjekter</a>
+            <a href="bacheloroppgave.html">Bacheloroppgave</a>
+            <a href="kontakt.html">Kontakt oss</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            <h1 class="page-title">GRUPPE 6 CV-ER</h1>
-
-            <div class="cv-list">
-                <div class="cv-row">
-                    <span class="cv-name">Elias Lyng CV:</span>
-                    <a href="files/elias-lyng-cv.pdf" download class="cv-download">Last ned <span class="download-icon">⬇</span></a>
+    <main id="innhold">
+        <div class="page-head">
+            <h1 class="page-title">CV-er</h1>
+            <p class="page-intro">Åpne CV-en i nettleseren eller last den ned som PDF.</p>
+        </div>
+        <div class="cv-list">
+            <div class="cv-row">
+                <img src="images/opt/elias-lyng-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
+                <div class="cv-meta">
+                    <span class="cv-name">Elias Lyng</span>
+                    <span class="cv-focus">Digitalisering, tjenesteutvikling og infrastruktur</span>
                 </div>
-
-                <div class="cv-row">
-                    <span class="cv-name">Daniel Tallaksen CV:</span>
-                    <a href="files/daniel-tallaksen-cv.pdf" download class="cv-download">Last ned <span class="download-icon">⬇</span></a>
-                </div>
-
-                <div class="cv-row">
-                    <span class="cv-name">Elias Norbakk CV:</span>
-                    <a href="files/elias-norbakk-cv.pdf" download class="cv-download">Last ned <span class="download-icon">⬇</span></a>
-                </div>
-
-                <div class="cv-row">
-                    <span class="cv-name">Truls Reime CV:</span>
-                    <a href="files/truls-reime-cv.pdf" download class="cv-download">Last ned <span class="download-icon">⬇</span></a>
+                <div class="cv-actions">
+                    <a href="files/elias-lyng-cv.pdf" target="_blank" rel="noopener" class="text-link">Åpne</a>
+                    <a href="files/elias-lyng-cv.pdf" download class="btn btn-small"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg> Last ned</a>
                 </div>
             </div>
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Gruppe 6
+            <div class="cv-row">
+                <img src="images/opt/daniel-tallaksen-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
+                <div class="cv-meta">
+                    <span class="cv-name">Daniel Tallaksen</span>
+                    <span class="cv-focus">Problemløsning, databaser og CRM-systemer</span>
+                </div>
+                <div class="cv-actions">
+                    <a href="files/daniel-tallaksen-cv.pdf" target="_blank" rel="noopener" class="text-link">Åpne</a>
+                    <a href="files/daniel-tallaksen-cv.pdf" download class="btn btn-small"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg> Last ned</a>
+                </div>
+            </div>
+            <div class="cv-row">
+                <img src="images/opt/elias-norbakk-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
+                <div class="cv-meta">
+                    <span class="cv-name">Elias Nikolai Norbakk</span>
+                    <span class="cv-focus">UX-design, brukerbehov og databaser</span>
+                </div>
+                <div class="cv-actions">
+                    <a href="files/elias-norbakk-cv.pdf" target="_blank" rel="noopener" class="text-link">Åpne</a>
+                    <a href="files/elias-norbakk-cv.pdf" download class="btn btn-small"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg> Last ned</a>
+                </div>
+            </div>
+            <div class="cv-row">
+                <img src="images/opt/truls-reime-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
+                <div class="cv-meta">
+                    <span class="cv-name">Truls Reime</span>
+                    <span class="cv-focus">UX-design, databaser og systemutvikling</span>
+                </div>
+                <div class="cv-actions">
+                    <a href="files/truls-reime-cv.pdf" target="_blank" rel="noopener" class="text-link">Åpne</a>
+                    <a href="files/truls-reime-cv.pdf" download class="btn btn-small"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg> Last ned</a>
+                </div>
+            </div>
+            <!-- CV for Abokor og Rune: legg PDF i files/ og kopier en cv-row over -->
         </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Alfa Omega</strong>
+                <p>IT og informasjonssystemer, Universitetet i Agder</p>
+            </div>
+            <a class="btn btn-ghost-light" href="kontakt.html">Ta kontakt</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Alfa Omega</p>
     </footer>
 
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=3"></script>
 </body>
 </html>

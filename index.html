@@ -3,39 +3,76 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hjem - Gruppe 6</title>
+    <title>Alfa Omega | IT-studenter ved UiA som søker praksisbedrift</title>
+    <meta name="description" content="Alfa Omega er seks IT- og informasjonssystemstudenter ved Universitetet i Agder som søker praksisbedrift." />
+    <meta property="og:title" content="Alfa Omega | IT-studenter ved UiA som søker praksisbedrift" />
+    <meta property="og:description" content="Alfa Omega er seks IT- og informasjonssystemstudenter ved Universitetet i Agder som søker praksisbedrift." />
+    <meta property="og:image" content="https://thelyng.dev/images/opt/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#15263F" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css?v=3" />
 </head>
 <body>
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
     <header class="site-header">
         <div class="header-content">
-            <nav class="site-nav site-nav-left">
+            <nav class="site-nav site-nav-left" aria-label="Hovedmeny">
                 <a href="medlemmer.html">Medlemmer</a>
                 <a href="cver.html">CV-er</a>
                 <a href="promovideo.html">Promovideo</a>
             </nav>
-
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Gruppe 6 logo" />
+            <a class="site-logo" href="index.html" aria-label="Alfa Omega, til forsiden">
+                <img src="images/opt/logo.png" alt="Alfa Omega" width="337" height="400" />
             </a>
-
-            <nav class="site-nav site-nav-right">
+            <nav class="site-nav site-nav-right" aria-label="Hovedmeny, fortsettelse">
                 <a href="prosjekter.html">Prosjekter</a>
                 <a href="bacheloroppgave.html">Bacheloroppgave</a>
                 <a href="kontakt.html">Kontakt oss</a>
             </nav>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hovedmeny">
+                <span class="nav-toggle-bar"></span><span class="visually-hidden">Meny</span>
+            </button>
         </div>
+        <nav class="mobile-nav" id="hovedmeny" aria-label="Meny">
+            <a href="medlemmer.html">Medlemmer</a>
+            <a href="cver.html">CV-er</a>
+            <a href="promovideo.html">Promovideo</a>
+            <a href="prosjekter.html">Prosjekter</a>
+            <a href="bacheloroppgave.html">Bacheloroppgave</a>
+            <a href="kontakt.html">Kontakt oss</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            <img src="images/gruppebilde.png" alt="Gruppe 6 gruppebilde" class="group-photo" />
+    <main id="innhold">
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow">IT og informasjonssystemer &middot; Universitetet i Agder</p>
+                    <h1>Seks studenter på jakt etter et ekte problem å løse</h1>
+                    <p class="lead">Vi er Alfa Omega. Vi ser etter en bedrift, offentlig aktør eller organisasjon som vil ha oss i praksis, og vi vil levere noe dere faktisk tar i bruk etterpå.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="kontakt.html">Ta kontakt med oss</a>
+                        <a class="btn btn-secondary" href="medlemmer.html">Møt gruppa</a>
+                    </div>
+                </div>
+                <div class="face-grid" aria-label="Gruppemedlemmene">
+                    <a href="medlemmer.html#elias-lyng" class="face" style="--i:0"><img src="images/opt/elias-lyng-sq.jpg" alt="Elias Lyng" width="480" height="480" loading="eager" /><span>Elias L.</span></a>
+                    <a href="medlemmer.html#daniel-tallaksen" class="face" style="--i:1"><img src="images/opt/daniel-tallaksen-sq.jpg" alt="Daniel Tallaksen" width="480" height="480" loading="eager" /><span>Daniel</span></a>
+                    <a href="medlemmer.html#elias-norbakk" class="face" style="--i:2"><img src="images/opt/elias-norbakk-sq.jpg" alt="Elias Nikolai Norbakk" width="480" height="480" loading="eager" /><span>Elias N.</span></a>
+                    <a href="medlemmer.html#truls-reime" class="face" style="--i:3"><img src="images/opt/truls-reime-sq.jpg" alt="Truls Reime" width="480" height="480" loading="eager" /><span>Truls</span></a>
+                    <a href="medlemmer.html#abokor-mahamed" class="face" style="--i:4"><img src="images/opt/abokor-mahamed-sq.jpg" alt="Abokor Osman Mahamed" width="480" height="480" loading="eager" /><span>Abokor</span></a>
+                    <a href="medlemmer.html#rune-kvame" class="face" style="--i:5"><img src="images/opt/rune-kvame-sq.jpg" alt="Rune Kvame" width="480" height="480" loading="eager" /><span>Rune</span></a>
+                </div>
+            </div>
+        </section>
 
-            <section class="about-section">
-                <h2 class="section-title">OM OSS</h2>
+        <section class="section about-section">
+            <div class="narrow">
+                <h2 class="section-title">Om oss</h2>
                 <p class="about-text">
                     Vi er en gruppe IT- og informasjonssystemstudenter ved Universitetet i Agder som kombinerer teknisk utvikling,
                     brukerforståelse og praktisk problemløsning. Som gruppe er vi opptatt av å jobbe strukturert, fordele ansvar
@@ -47,16 +84,57 @@
                     mer enn bare en prototype: Vi ønsker å lage noe gjennomarbeidet, ryddig dokumentert og relevant nok til at det
                     kan videreutvikles etter prosjektperioden.
                 </p>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Gruppe 6
+        <section class="section skills-section">
+            <div class="wide">
+                <h2 class="section-title">Hva vi kan bidra med</h2>
+                <div class="skill-grid">
+                <article class="skill-card">
+                    <span class="skill-num">01</span>
+                    <h3>Brukerbehov og UX</h3>
+                    <p>Interesse for UX-design og for å forstå hva brukerne faktisk trenger, blant annet med bakgrunn fra samfunnsforskning.</p>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-num">02</span>
+                    <h3>Systemutvikling og data</h3>
+                    <p>HTML, CSS, C#, Python og SQL. Erfaring med MySQL, NoSQL og CRM-systemer.</p>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-num">03</span>
+                    <h3>Infrastruktur og sikkerhet</h3>
+                    <p>Docker, nettverk og VPN fra eget homelab, og en særlig interesse for cybersikkerhet.</p>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-num">04</span>
+                    <h3>Analyse og digitalisering</h3>
+                    <p>Systemanalyse, kravarbeid og erfaring fra digitaliseringsprosjekter i offentlig sektor gjennom Digi Agder.</p>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-band">
+            <div class="narrow">
+                <h2>Har dere en oppgave til oss?</h2>
+                <p>Vi tar gjerne en uforpliktende prat om hva dere trenger, og om vi passer for dere.</p>
+                <a class="btn btn-primary" href="kontakt.html">Kontakt oss</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Alfa Omega</strong>
+                <p>IT og informasjonssystemer, Universitetet i Agder</p>
+            </div>
+            <a class="btn btn-ghost-light" href="kontakt.html">Ta kontakt</a>
         </div>
+        <p class="footer-copy">&copy; 2026 Alfa Omega</p>
     </footer>
 
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=3"></script>
 </body>
 </html>
