@@ -496,3 +496,18 @@ main { padding-bottom: 0; }
 @media (max-width: 640px) {
     .skill-grid { grid-template-columns: 1fr; }
 }
+
+/* Toppbilde på prosjektsiden */
+.page-head-photo {
+    background:
+        linear-gradient(rgba(21, 38, 63, .72), rgba(21, 38, 63, .86)),
+        url('../images/opt/presentasjon.jpg') center 35% / cover no-repeat,
+        var(--navy);
+    padding: 7rem 1.5rem 6rem;
+    margin-bottom: 3.5rem;
+}
+.page-head-photo .page-title { color: var(--white); }
+.page-head-photo .page-intro { color: #DDE3EC; }
+@media (max-width: 680px) {
+    .page-head-photo { padding: 4.5rem 1.25rem 4rem; margin-bottom: 2.5rem; }
+}
