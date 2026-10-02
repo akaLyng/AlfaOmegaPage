@@ -39,7 +39,7 @@
         var parent = el.parentElement;
         if (parent && (parent.classList.contains('skill-grid') || parent.classList.contains('project-grid'))) {
             var i = Array.prototype.indexOf.call(parent.children, el);
-            el.style.setProperty('--delay', (i % 3) * 110 + 'ms');
+            el.style.setProperty('--delay', (i % 3) * 70 + 'ms');
         }
     });
 
