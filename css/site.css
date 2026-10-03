@@ -338,7 +338,7 @@ a { color: var(--orange-dark); }
 .cta-band {
     background:
         linear-gradient(rgba(21, 38, 63, .80), rgba(21, 38, 63, .90)),
-        url('../images/opt/praksis.jpg') center 45% / cover no-repeat,
+        url('../images/opt/presentasjon.jpg') center 40% / cover no-repeat,
         var(--navy);
     color: #DDE3EC;
     text-align: center;
@@ -519,3 +519,68 @@ main { padding-bottom: 0; }
     border: 1px dashed #CDD3DC;
     padding: .45rem .9rem; border-radius: 999px;
 }
+
+/* Forside: stort bilde bak toppen, menyen ligger oppå bildet */
+.site-header--overlay {
+    position: fixed; left: 0; right: 0; top: 0;
+    background-color: transparent;
+    border-bottom-color: transparent;
+    transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.site-header--overlay:not(.is-scrolled) .site-nav a { color: var(--white); text-shadow: 0 1px 8px rgba(0,0,0,.35); }
+.site-header--overlay:not(.is-scrolled) .site-nav a:hover,
+.site-header--overlay:not(.is-scrolled) .site-nav a[aria-current="page"] { color: #F3C9AE; }
+.site-header--overlay:not(.is-scrolled) .nav-toggle-bar,
+.site-header--overlay:not(.is-scrolled) .nav-toggle-bar::before,
+.site-header--overlay:not(.is-scrolled) .nav-toggle-bar::after { background: var(--white); }
+.site-header--overlay:not(.is-scrolled) .nav-toggle[aria-expanded="true"] .nav-toggle-bar { background: transparent; }
+.site-header--overlay.is-scrolled { background-color: var(--white); border-bottom-color: var(--line); }
+
+.hero--photo {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    color: #E6EBF2;
+    border-bottom: 0;
+    background:
+        linear-gradient(90deg, rgba(21, 38, 63, .92) 0%, rgba(21, 38, 63, .72) 45%, rgba(21, 38, 63, .25) 100%),
+        url('../images/opt/praksis.jpg') 70% center / cover no-repeat,
+        var(--navy);
+}
+.hero--photo .hero-inner { display: block; width: 100%; padding-top: 8rem; padding-bottom: 6rem; }
+.hero--photo .hero-text { max-width: 640px; }
+.hero--photo h1 { color: var(--white); font-size: clamp(2.4rem, 5.5vw, 4.2rem); }
+.hero--photo .eyebrow { color: #F3C9AE; }
+.hero--photo .lead { color: #DDE3EC; }
+
+.scroll-down {
+    position: absolute; left: 50%; bottom: 2rem;
+    transform: translateX(-50%);
+    width: 52px; height: 52px;
+    display: grid; place-items: center;
+    border: 2px solid rgba(255,255,255,.6);
+    border-radius: 50%;
+    color: var(--white);
+    animation: bob 2.2s ease-in-out infinite;
+}
+.scroll-down svg { width: 22px; height: 22px; }
+.scroll-down:hover { background: rgba(255,255,255,.12); }
+@keyframes bob { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 6px); } }
+
+.team-section { background: var(--bg); }
+.face-grid--row { grid-template-columns: repeat(6, 1fr); margin-top: 2.5rem; }
+.face-grid--row .face:nth-child(3n+2) { transform: none; }
+@media (max-width: 960px) { .face-grid--row { grid-template-columns: repeat(3, 1fr); } }
+
+@media (max-width: 760px) {
+    .hero--photo {
+        background:
+            linear-gradient(180deg, rgba(21, 38, 63, .78), rgba(21, 38, 63, .9)),
+            url('../images/opt/praksis.jpg') 65% center / cover no-repeat,
+            var(--navy);
+    }
+    .hero--photo .hero-inner { padding-top: 7rem; }
+}
+

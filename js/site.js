@@ -26,7 +26,7 @@
 (function () {
     var groups = [
         '.section-title', '.about-text', '.page-intro',
-        '.skill-grid > *', '.member-card', '.cv-row', '.contact-card',
+        '.skill-grid > *', '.team-grid > *', '.section-intro', '.member-card', '.cv-row', '.contact-card',
         '.project-section-title', '.project-grid > *', '.soon-card',
         '.cta-band h2', '.cta-band p', '.cta-band .btn'
     ];
@@ -37,7 +37,7 @@
         el.classList.add('reveal');
         // Små forsinkelser så kort i samme rad kommer etter hverandre
         var parent = el.parentElement;
-        if (parent && (parent.classList.contains('skill-grid') || parent.classList.contains('project-grid'))) {
+        if (parent && (parent.classList.contains('skill-grid') || parent.classList.contains('team-grid') || parent.classList.contains('project-grid'))) {
             var i = Array.prototype.indexOf.call(parent.children, el);
             el.style.setProperty('--delay', (i % 3) * 70 + 'ms');
         }

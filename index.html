@@ -14,11 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=7" />
+    <link rel="stylesheet" href="css/site.css?v=11" />
 </head>
 <body>
     <a class="skip-link" href="#innhold">Hopp til innhold</a>
-    <header class="site-header">
+    <header class="site-header site-header--overlay">
         <div class="header-content">
             <nav class="site-nav site-nav-left" aria-label="Hovedmeny">
                 <a href="medlemmer.html">Medlemmer</a>
@@ -48,7 +48,7 @@
     </header>
 
     <main id="innhold">
-        <section class="hero">
+        <section class="hero hero--photo">
             <div class="hero-inner">
                 <div class="hero-text">
                     <p class="eyebrow">IT og informasjonssystemer &middot; Universitetet i Agder</p>
@@ -56,10 +56,19 @@
                     <p class="lead">Vi er Alfa Omega. Vi ser etter en bedrift, offentlig aktør eller organisasjon som vil ha oss i praksis, og vi vil levere noe dere faktisk tar i bruk etterpå.</p>
                     <div class="hero-actions">
                         <a class="btn btn-primary" href="kontakt.html">Ta kontakt med oss</a>
-                        <a class="btn btn-secondary" href="medlemmer.html">Møt gruppa</a>
+                        <a class="btn btn-ghost-light" href="medlemmer.html">Møt gruppa</a>
                     </div>
                 </div>
-                <div class="face-grid" aria-label="Gruppemedlemmene">
+            </div>
+            <a class="scroll-down" href="#gruppa" aria-label="Scroll ned til gruppa">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg>
+            </a>
+        </section>
+
+        <section class="section team-section" id="gruppa">
+            <div class="wide">
+                <h2 class="section-title">Møt gruppa</h2>
+                <div class="face-grid face-grid--row" aria-label="Gruppemedlemmene">
                     <a href="medlemmer.html#elias-lyng" class="face" style="--i:0"><img src="images/opt/elias-lyng-sq.jpg" alt="Elias Lyng" width="480" height="480" loading="eager" /><span>Elias L.</span></a>
                     <a href="medlemmer.html#daniel-tallaksen" class="face" style="--i:1"><img src="images/opt/daniel-tallaksen-sq.jpg" alt="Daniel Tallaksen" width="480" height="480" loading="eager" /><span>Daniel</span></a>
                     <a href="medlemmer.html#elias-norbakk" class="face" style="--i:2"><img src="images/opt/elias-norbakk-sq.jpg" alt="Elias Nikolai Norbakk" width="480" height="480" loading="eager" /><span>Elias N.</span></a>
@@ -135,6 +144,6 @@
         <p class="footer-copy">&copy; 2026 Alfa Omega</p>
     </footer>
 
-    <script src="js/site.js?v=7"></script>
+    <script src="js/site.js?v=11"></script>
 </body>
 </html>
