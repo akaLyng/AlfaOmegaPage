@@ -3,81 +3,110 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prosjekter - Gruppe 6</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css" />
+    <title>Prosjekter | Alfa Omega</title>
+    <meta name="description" content="Prosjekter medlemmene i Alfa Omega har jobbet med." />
+    <meta property="og:title" content="Prosjekter | Alfa Omega" />
+    <meta property="og:description" content="Prosjekter medlemmene i Alfa Omega har jobbet med." />
+    <meta property="og:image" content="https://thelyng.dev/images/opt/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#15263F" />
+    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
+    <link rel="icon" href="images/favicon-32.png?v=2" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/icon-192.png?v=2" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2" />
+    <link rel="preload" href="fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/site.css?v=15" />
 </head>
 <body>
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
     <header class="site-header">
         <div class="header-content">
-            <nav class="site-nav site-nav-left">
+            <nav class="site-nav site-nav-left" aria-label="Hovedmeny">
                 <a href="medlemmer.html">Medlemmer</a>
-                <a href="cver.html">CV-er</a>
-                <a href="promovideo.html">Promovideo</a>
+                <a href="prosjekter.html" aria-current="page">Prosjekter</a>
             </nav>
-
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Gruppe 6 logo" />
+            <a class="site-logo" href="index.html" aria-label="Alfa Omega, til forsiden">
+                <img src="images/opt/logo.png" alt="Alfa Omega" width="337" height="400" />
             </a>
-
-            <nav class="site-nav site-nav-right">
-                <a href="prosjekter.html">Prosjekter</a>
+            <nav class="site-nav site-nav-right" aria-label="Hovedmeny, fortsettelse">
                 <a href="bacheloroppgave.html">Bacheloroppgave</a>
                 <a href="kontakt.html">Kontakt oss</a>
             </nav>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hovedmeny">
+                <span class="nav-toggle-bar"></span><span class="visually-hidden">Meny</span>
+            </button>
         </div>
+        <nav class="mobile-nav" id="hovedmeny" aria-label="Meny">
+            <a href="medlemmer.html">Medlemmer</a>
+            <a href="prosjekter.html" aria-current="page">Prosjekter</a>
+            <a href="bacheloroppgave.html">Bacheloroppgave</a>
+            <a href="kontakt.html">Kontakt oss</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            <h1 class="page-title">VÅRE PROSJEKTER</h1>
-
-            <div class="project-section">
-                <div class="project-section-title-wrapper">
-                    <h2 class="project-section-title">Pågående</h2>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-placeholder"></div>
-                    <div class="project-info">
-                        <h3 class="project-name">Prosjektnavn her</h3>
-                        <p class="project-description">Kort beskrivelse av prosjektet her.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-placeholder"></div>
-                    <div class="project-info">
-                        <h3 class="project-name">Prosjektnavn her</h3>
-                        <p class="project-description">Kort beskrivelse av prosjektet her.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-section">
-                <div class="project-section-title-wrapper">
-                    <h2 class="project-section-title">Fullførte</h2>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-placeholder"></div>
-                    <div class="project-info">
-                        <h3 class="project-name">Prosjektnavn her</h3>
-                        <p class="project-description">Kort beskrivelse av prosjektet her.</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Gruppe 6
+    <main id="innhold">
+        <div class="page-head page-head-photo">
+            <h1 class="page-title">Prosjekter</h1>
+            <p class="page-intro">Et utvalg av det vi har jobbet med, i praksis, på egen hånd og som gruppe.</p>
         </div>
+        <div class="wide">
+        <section class="project-section">
+            <h2 class="project-section-title">Pågående</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="project-tag">Digi Agder</span>
+                    <h3 class="project-name">Praksis hos Digi Agder: KI i kommunesektoren</h3>
+                    <p class="project-description">I praksis hos Digi Agder bidrar vi med konsulent- og utviklingskompetanse i KI-prosjektet for kommunene i Agder. Her får vi praktisk erfaring med digitalisering og tjenesteutvikling i offentlig sektor.</p>
+                    <p class="project-who">Rune Kvame, Truls Reime, Elias Lyng og Daniel Tallaksen</p>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">Selvstendig prosjekt</span>
+                    <h3 class="project-name">Luksuseiendom Studio</h3>
+                    <p class="project-description">Analyse av boligannonser og utvikling av kvalitetsstandarder som gjør annonsene mer strukturerte, presise og brukervennlige.</p>
+                    <p class="project-who">Abokor Osman Mahamed</p>
+                </article>
+            </div>
+        </section>
+        <section class="project-section">
+            <h2 class="project-section-title">Fullførte</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="project-tag">Eget prosjekt</span>
+                    <h3 class="project-name">Homelab</h3>
+                    <p class="project-description">Eget homelab bygget med Raspberry Pi, Docker og VPN-løsninger.</p>
+                    <p class="project-who">Elias Lyng</p>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">Gruppeprosjekt</span>
+                    <h3 class="project-name">Denne nettsiden</h3>
+                    <p class="project-description">Nettsiden dere leser nå, laget av hele gruppa og versjonert på GitHub.</p>
+                    <p class="project-who">Alfa Omega</p>
+                </article>
+            </div>
+        </section>
+        </div>
+        <!-- Mal for nytt prosjekt:
+        <article class="project-card">
+            <span class="project-tag">Kategori</span>
+            <h3 class="project-name">Navn</h3>
+            <p class="project-description">Hva, for hvem og hvilket resultat.</p>
+            <p class="project-who">Hvem</p>
+        </article>
+        -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Alfa Omega</strong>
+                <p>IT og informasjonssystemer, Universitetet i Agder</p>
+            </div>
+            <a class="footer-link" href="kontakt.html">Kontakt oss</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Alfa Omega</p>
     </footer>
 
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=15"></script>
 </body>
 </html>

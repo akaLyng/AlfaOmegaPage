@@ -3,48 +3,76 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakt oss - Gruppe 6</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css" />
+    <title>Kontakt oss | Alfa Omega</title>
+    <meta name="description" content="Ta kontakt med Alfa Omega om praksisplass." />
+    <meta property="og:title" content="Kontakt oss | Alfa Omega" />
+    <meta property="og:description" content="Ta kontakt med Alfa Omega om praksisplass." />
+    <meta property="og:image" content="https://thelyng.dev/images/opt/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#15263F" />
+    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
+    <link rel="icon" href="images/favicon-32.png?v=2" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/icon-192.png?v=2" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2" />
+    <link rel="preload" href="fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/site.css?v=15" />
 </head>
 <body>
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
     <header class="site-header">
         <div class="header-content">
-            <nav class="site-nav site-nav-left">
+            <nav class="site-nav site-nav-left" aria-label="Hovedmeny">
                 <a href="medlemmer.html">Medlemmer</a>
-                <a href="cver.html">CV-er</a>
-                <a href="promovideo.html">Promovideo</a>
-            </nav>
-
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Gruppe 6 logo" />
-            </a>
-
-            <nav class="site-nav site-nav-right">
                 <a href="prosjekter.html">Prosjekter</a>
-                <a href="bacheloroppgave.html">Bacheloroppgave</a>
-                <a href="kontakt.html">Kontakt oss</a>
             </nav>
+            <a class="site-logo" href="index.html" aria-label="Alfa Omega, til forsiden">
+                <img src="images/opt/logo.png" alt="Alfa Omega" width="337" height="400" />
+            </a>
+            <nav class="site-nav site-nav-right" aria-label="Hovedmeny, fortsettelse">
+                <a href="bacheloroppgave.html">Bacheloroppgave</a>
+                <a href="kontakt.html" aria-current="page">Kontakt oss</a>
+            </nav>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hovedmeny">
+                <span class="nav-toggle-bar"></span><span class="visually-hidden">Meny</span>
+            </button>
         </div>
+        <nav class="mobile-nav" id="hovedmeny" aria-label="Meny">
+            <a href="medlemmer.html">Medlemmer</a>
+            <a href="prosjekter.html">Prosjekter</a>
+            <a href="bacheloroppgave.html">Bacheloroppgave</a>
+            <a href="kontakt.html" aria-current="page">Kontakt oss</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            <h1 class="page-title">KONTAKT OSS</h1>
-            <section class="about-section">
-                <p class="about-text">Ta gjerne kontakt med oss!</p>
-            </section>
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Gruppe 6
+    <main id="innhold">
+        <div class="page-head">
+            <h1 class="page-title">Kontakt oss</h1>
+            <p class="page-intro">Vi ser etter en praksisbedrift og tar gjerne en uforpliktende prat. Send en e-post til prosjektlederen vår, Rune, så tar vi det videre derfra.</p>
         </div>
+        <div class="narrow">
+            <div class="contact-primary">
+                <img src="images/opt/rune-kvame-sq.jpg" alt="" class="contact-primary-photo" width="480" height="480" />
+                <div class="contact-primary-text">
+                    <p class="contact-primary-role">Prosjektleder og kontaktperson</p>
+                    <h2 class="contact-primary-name">Rune Kvame</h2>
+                    <a class="contact-primary-mail" href="mailto:runevk@uia.no">runevk@uia.no</a>
+                </div>
+                <a class="btn btn-primary" href="mailto:runevk@uia.no">Send e-post</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Alfa Omega</strong>
+                <p>IT og informasjonssystemer, Universitetet i Agder</p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Alfa Omega</p>
     </footer>
 
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=15"></script>
 </body>
 </html>
