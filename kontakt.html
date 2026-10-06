@@ -10,11 +10,13 @@
     <meta property="og:image" content="https://thelyng.dev/images/opt/logo.png" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#15263F" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=11" />
+    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
+    <link rel="icon" href="images/favicon-32.png?v=2" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/icon-192.png?v=2" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2" />
+    <link rel="preload" href="fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/site.css?v=15" />
 </head>
 <body>
     <a class="skip-link" href="#innhold">Hopp til innhold</a>
@@ -22,14 +24,12 @@
         <div class="header-content">
             <nav class="site-nav site-nav-left" aria-label="Hovedmeny">
                 <a href="medlemmer.html">Medlemmer</a>
-                <a href="cver.html">CV-er</a>
-                <a href="promovideo.html">Promovideo</a>
+                <a href="prosjekter.html">Prosjekter</a>
             </nav>
             <a class="site-logo" href="index.html" aria-label="Alfa Omega, til forsiden">
                 <img src="images/opt/logo.png" alt="Alfa Omega" width="337" height="400" />
             </a>
             <nav class="site-nav site-nav-right" aria-label="Hovedmeny, fortsettelse">
-                <a href="prosjekter.html">Prosjekter</a>
                 <a href="bacheloroppgave.html">Bacheloroppgave</a>
                 <a href="kontakt.html" aria-current="page">Kontakt oss</a>
             </nav>
@@ -39,8 +39,6 @@
         </div>
         <nav class="mobile-nav" id="hovedmeny" aria-label="Meny">
             <a href="medlemmer.html">Medlemmer</a>
-            <a href="cver.html">CV-er</a>
-            <a href="promovideo.html">Promovideo</a>
             <a href="prosjekter.html">Prosjekter</a>
             <a href="bacheloroppgave.html">Bacheloroppgave</a>
             <a href="kontakt.html" aria-current="page">Kontakt oss</a>
@@ -50,55 +48,17 @@
     <main id="innhold">
         <div class="page-head">
             <h1 class="page-title">Kontakt oss</h1>
-            <p class="page-intro">Vi ser etter en praksisbedrift og tar gjerne en uforpliktende prat. Send en melding til en av oss på LinkedIn, så tar vi det videre derfra.</p>
+            <p class="page-intro">Vi ser etter en praksisbedrift og tar gjerne en uforpliktende prat. Send en e-post til prosjektlederen vår, Rune, så tar vi det videre derfra.</p>
         </div>
         <div class="narrow">
-            <!-- Legg inn felles e-post her når dere har en:
-            <a class="btn btn-primary" href="mailto:DIN-EPOST">Send oss en e-post</a>
-            -->
-            <div class="contact-list">
-            <div class="contact-card">
-                <img src="images/opt/elias-lyng-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
-                <div class="cv-meta">
-                    <span class="cv-name">Elias Lyng</span>
+            <div class="contact-primary">
+                <img src="images/opt/rune-kvame-sq.jpg" alt="" class="contact-primary-photo" width="480" height="480" />
+                <div class="contact-primary-text">
+                    <p class="contact-primary-role">Prosjektleder og kontaktperson</p>
+                    <h2 class="contact-primary-name">Rune Kvame</h2>
+                    <a class="contact-primary-mail" href="mailto:runevk@uia.no">runevk@uia.no</a>
                 </div>
-                <a class="btn btn-small" href="https://www.linkedin.com/in/elias-lyng-153617336/" target="_blank" rel="noopener" aria-label="Send melding til Elias Lyng på LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
-            </div>
-            <div class="contact-card">
-                <img src="images/opt/daniel-tallaksen-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
-                <div class="cv-meta">
-                    <span class="cv-name">Daniel Tallaksen</span>
-                </div>
-                <a class="btn btn-small" href="https://www.linkedin.com/in/daniel-tallaksen-340138318/" target="_blank" rel="noopener" aria-label="Send melding til Daniel Tallaksen på LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
-            </div>
-            <div class="contact-card">
-                <img src="images/opt/elias-norbakk-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
-                <div class="cv-meta">
-                    <span class="cv-name">Elias Nikolai Norbakk</span>
-                </div>
-                <a class="btn btn-small" href="https://www.linkedin.com/in/elias-norbakk-64b63742a/" target="_blank" rel="noopener" aria-label="Send melding til Elias Nikolai Norbakk på LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
-            </div>
-            <div class="contact-card">
-                <img src="images/opt/truls-reime-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
-                <div class="cv-meta">
-                    <span class="cv-name">Truls Reime</span>
-                </div>
-                <a class="btn btn-small" href="https://www.linkedin.com/in/truls-reime-018373397/" target="_blank" rel="noopener" aria-label="Send melding til Truls Reime på LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
-            </div>
-            <div class="contact-card">
-                <img src="images/opt/abokor-mahamed-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
-                <div class="cv-meta">
-                    <span class="cv-name">Abokor Osman Mahamed</span>
-                </div>
-                <a class="btn btn-small" href="https://www.linkedin.com/in/abokor-mahamed-a89787332/" target="_blank" rel="noopener" aria-label="Send melding til Abokor Osman Mahamed på LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
-            </div>
-            <div class="contact-card">
-                <img src="images/opt/rune-kvame-sq.jpg" alt="" class="cv-avatar" width="480" height="480" loading="lazy" />
-                <div class="cv-meta">
-                    <span class="cv-name">Rune Kvame</span>
-                </div>
-                <a class="btn btn-small" href="https://www.linkedin.com/in/rune-kvame-918695418/" target="_blank" rel="noopener" aria-label="Send melding til Rune Kvame på LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
-            </div>
+                <a class="btn btn-primary" href="mailto:runevk@uia.no">Send e-post</a>
             </div>
         </div>
     </main>
@@ -109,11 +69,10 @@
                 <strong>Alfa Omega</strong>
                 <p>IT og informasjonssystemer, Universitetet i Agder</p>
             </div>
-            <a class="btn btn-ghost-light" href="kontakt.html">Ta kontakt</a>
         </div>
         <p class="footer-copy">&copy; 2026 Alfa Omega</p>
     </footer>
 
-    <script src="js/site.js?v=11"></script>
+    <script src="js/site.js?v=15"></script>
 </body>
 </html>

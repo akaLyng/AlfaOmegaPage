@@ -26,7 +26,7 @@
 (function () {
     var groups = [
         '.section-title', '.about-text', '.page-intro',
-        '.skill-grid > *', '.team-grid > *', '.section-intro', '.member-card', '.cv-row', '.contact-card',
+        '.skill-grid > *', '.video-frame', '.team-grid > *', '.section-intro', '.member-card', '.contact-primary',
         '.project-section-title', '.project-grid > *', '.soon-card',
         '.cta-band h2', '.cta-band p', '.cta-band .btn'
     ];

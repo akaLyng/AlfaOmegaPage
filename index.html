@@ -10,11 +10,13 @@
     <meta property="og:image" content="https://thelyng.dev/images/opt/logo.png" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#15263F" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=11" />
+    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
+    <link rel="icon" href="images/favicon-32.png?v=2" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/icon-192.png?v=2" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2" />
+    <link rel="preload" href="fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/site.css?v=15" />
 </head>
 <body>
     <a class="skip-link" href="#innhold">Hopp til innhold</a>
@@ -22,14 +24,12 @@
         <div class="header-content">
             <nav class="site-nav site-nav-left" aria-label="Hovedmeny">
                 <a href="medlemmer.html">Medlemmer</a>
-                <a href="cver.html">CV-er</a>
-                <a href="promovideo.html">Promovideo</a>
+                <a href="prosjekter.html">Prosjekter</a>
             </nav>
             <a class="site-logo" href="index.html" aria-label="Alfa Omega, til forsiden">
                 <img src="images/opt/logo.png" alt="Alfa Omega" width="337" height="400" />
             </a>
             <nav class="site-nav site-nav-right" aria-label="Hovedmeny, fortsettelse">
-                <a href="prosjekter.html">Prosjekter</a>
                 <a href="bacheloroppgave.html">Bacheloroppgave</a>
                 <a href="kontakt.html">Kontakt oss</a>
             </nav>
@@ -39,8 +39,6 @@
         </div>
         <nav class="mobile-nav" id="hovedmeny" aria-label="Meny">
             <a href="medlemmer.html">Medlemmer</a>
-            <a href="cver.html">CV-er</a>
-            <a href="promovideo.html">Promovideo</a>
             <a href="prosjekter.html">Prosjekter</a>
             <a href="bacheloroppgave.html">Bacheloroppgave</a>
             <a href="kontakt.html">Kontakt oss</a>
@@ -55,7 +53,7 @@
                     <h1>Seks studenter på jakt etter et ekte problem å løse</h1>
                     <p class="lead">Vi er Alfa Omega. Vi ser etter en bedrift, offentlig aktør eller organisasjon som vil ha oss i praksis, og vi vil levere noe dere faktisk tar i bruk etterpå.</p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="kontakt.html">Ta kontakt med oss</a>
+                        <a class="btn btn-primary" href="kontakt.html">Kontakt oss</a>
                         <a class="btn btn-ghost-light" href="medlemmer.html">Møt gruppa</a>
                     </div>
                 </div>
@@ -75,6 +73,22 @@
                     <a href="medlemmer.html#truls-reime" class="face" style="--i:3"><img src="images/opt/truls-reime-sq.jpg" alt="Truls Reime" width="480" height="480" loading="eager" /><span>Truls</span></a>
                     <a href="medlemmer.html#abokor-mahamed" class="face" style="--i:4"><img src="images/opt/abokor-mahamed-sq.jpg" alt="Abokor Osman Mahamed" width="480" height="480" loading="eager" /><span>Abokor</span></a>
                     <a href="medlemmer.html#rune-kvame" class="face" style="--i:5"><img src="images/opt/rune-kvame-sq.jpg" alt="Rune Kvame" width="480" height="480" loading="eager" /><span>Rune</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section video-section" id="video">
+            <div class="narrow">
+                <h2 class="section-title">Se hvem vi er</h2>
+                <div class="video-frame">
+                    <!-- Når videoen er klar, bytt ut hele <div class="video-placeholder"> med for eksempel:
+                    <iframe src="https://www.youtube-nocookie.com/embed/VIDEO-ID" title="Promovideo fra Alfa Omega"
+                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    -->
+                    <div class="video-placeholder">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.04-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>
+                        <p>Promovideoen vår kommer snart</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,11 +153,11 @@
                 <strong>Alfa Omega</strong>
                 <p>IT og informasjonssystemer, Universitetet i Agder</p>
             </div>
-            <a class="btn btn-ghost-light" href="kontakt.html">Ta kontakt</a>
+            <a class="footer-link" href="kontakt.html">Kontakt oss</a>
         </div>
         <p class="footer-copy">&copy; 2026 Alfa Omega</p>
     </footer>
 
-    <script src="js/site.js?v=11"></script>
+    <script src="js/site.js?v=15"></script>
 </body>
 </html>
